@@ -1,0 +1,193 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Roboto:ital,wght@0,300;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Roboto:ital,wght@0,300;1,300;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Roboto:ital,wght@0,300;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Roboto:ital,wght@0,300;0,400;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Roboto:ital,wght@0,300;0,400;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+.banner {
+  background-image: url(/img/banner.png);
+  height: 958px;
+  background-size: cover;
+  background-position: center;
+  .containerFull-1 {
+    // border: 1px solid red;
+    width: 304px;
+    margin: 0 auto;
+    padding-top: 308px;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: 700;
+    #word {
+      font: italic normal bold 24px/42px Roboto;
+    }
+    .name {
+      font: italic normal 900 80px/106px Roboto;
+      margin-bottom: 32px;
+    }
+    .hereDec {
+      width: 283px;
+      margin: 0 auto;
+    }
+    .wordDes {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    .imgs {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 40px;
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
+.content {
+  margin-top: 56px;
+}
+.about {
+  width: 412px;
+  margin: 0 auto;
+  // border: 1px solid rebeccapurple;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 28px;
+  .title {
+    font-style: 500;
+    font-size: 64px;
+    line-height: 84px;
+    margin-bottom: 40px;
+  }
+}
+.aboutDesc {
+  font-size: 24px;
+  font-style: 700;
+  .item:nth-child(1) {
+    height: 32px;
+    margin-top: 20px;
+    margin-bottom: 4px;
+  }
+  .item:nth-child(2) {
+    height: 32px;
+    margin-bottom: 8px;
+  }
+  .item:nth-child(3) {
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+}
+.aboutItem {
+  width: 384px;
+  margin: 0 auto;
+  border-top: 1px solid #000000;
+  padding: 28px 0 28px 0;
+
+  .dot {
+    font-size: 28px;
+    height: 32px;
+  }
+  .dot:nth-child(2) {
+    margin: 28px 0 28px 0;
+  }
+  .dot::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: #891818;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+}
+.containerFull-2 {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  .title {
+    font-size: 64px;
+    line-height: 84px;
+    margin-bottom: 12px;
+  }
+  span {
+    font-size: 24px;
+    height: 32px;
+  }
+  .fullDesc {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 32px;
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 68px;
+  }
+  #img-1 {
+    margin-bottom: 40px;
+  }
+  .imgArea {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.otherWorks {
+  text-align: center;
+  font-style: italic;
+  font-weight: 500;
+  .title {
+    font-size: 64px;
+    line-height: 84px;
+    margin-bottom: 16px;
+  }
+  span {
+    font-size: 20px;
+    line-height: 30px;
+    display: inline-block;
+    width: 226px;
+    margin-bottom: 56px;
+  }
+}
+ul.imgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // border: 1px solid red;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 96px;
+  .item {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 20px;
+      height: 28px;
+      margin: 16px 0 48px 0;
+    }
+  }
+}
+.containerFull-3 {
+  @extend .containerFull-2;
+  padding-bottom: 64px;
+  padding-top: 64px;
+  .title {
+    margin-top: 64px;
+    margin-bottom: 16px;
+  }
+  .contact {
+    font-size: 24px;
+    .item {
+      height: 33px;
+    }
+    .item:nth-child(1) {
+      margin-bottom: 16px;
+    }
+  }
+}
